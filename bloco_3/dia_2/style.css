@@ -1,0 +1,30 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+ul {
+   background-color: #ddd;
+}
+.xablau {
+  background-color: skyblue;
+}
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+body {
+  font-size: 16px;
+}
+#um {
+   background-color: yellow;
+   font-style: italic;
+}
+#dois {
+   background-color: red;
+   line-height: 4;
+}
+#três {
+   background-color:saddlebrown;
+   text-decoration: underline;
+}
