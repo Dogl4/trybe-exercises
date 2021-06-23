@@ -27,41 +27,45 @@ let e = 3;
 
 if (c > d) {
   console.log(`O 1° número é maior. ${c}`);
-}else {
+} else {
   console.log(`O 2° número é maior. ${d}`);
-} 
+}
 
 // 3
 if (c > d && C > e) {
   console.log(`O 1° número é maior. ${c}`);
-}else if (d > c && d > e){
+} else if (d > c && d > e) {
   console.log(`O 2° número é maior. ${d}`);
-} else{
+} else {
   console.log(`O 3° número é maior. ${e}`);
 }
 
 // 4
-let valor = 5;
+let valor = 0;
+let verificar;
 
-if(valor >0){
-  console.log('Positivo');
-}else if( valor === 0){
-  console.log('zero');
-}else{
-  console.log('Negativo');
+if (valor > 0) {
+  verificar = true;
+} else if (valor === 0) {
+  verificar = 'Zero';
+} else {
+  verificar = false;
 }
+console.log(verificar);
 
 // 5
 let n1 = 20;
 let n2 = 30;
-let n3 = 40;
-let respostaTriangulo; 
-const somaAngulo = 90;
+let n3 = -60;
+let respostaTriangulo;
+const somaAngulo = 180;
 let somaTeste = n1 + n2 + n3;
 
-if(somaAngulo === somaTeste){
+if (n1 < 0 || n2 < 0 || n3 < 0) {
+  respostaTriangulo = (`${false}. Ângulo inválido`)
+} else if (somaAngulo === somaTeste) {
   respostaTriangulo = true;
-} else{
+} else {
   respostaTriangulo = false;
 }
 console.log(respostaTriangulo);
