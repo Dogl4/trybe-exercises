@@ -11,7 +11,7 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log(soma);
 
 // 3. Calcule e imprima a média aritmética dos valores contidos no array  (média da soma todos dividido pela quantidande)
-let mediaAritmetica = soma / (numbers.length - 1);
+let mediaAritmetica = soma / numbers.length;
 console.log(Math.ceil(mediaAritmetica));
 
 // 4. Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor igual a 20";
@@ -32,17 +32,32 @@ for (let i2 = 1; i2 < numbers.length; i2 += 1) {
 console.log(`O maior número é: ${maiorNumero}`);
 
 // 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
-
 let impar = 0;
 let grupo = [];
 for (let i3 = 0; i3 < numbers.length; i3 += 1) {
-  if(numbers[i3] % 2 !== 0 ){
+  if (numbers[i3] % 2 !== 0) {
     impar += 1;
     grupo.push(numbers[i3]);
-  } 
+  }
 }
-if(impar === 0){
+if (impar === 0) {
   console.log('nenhum valor ímpar encontrado');
-}else{
+} else {
   console.log(`Quantidade de ímpares é: ${impar}. Estes são ${grupo}`);
 }
+
+// 7. Utilizando for, descubra qual o menor valor contido no array e imprima-o; 
+let menorValor = numbers[0];
+for (let i4 = 0; i4 < numbers.length; i4 += 1) {
+  if (numbers[i4] < menorValor) {
+    menorValor = numbers[i4];
+  }
+}
+console.log(`Menor valor é ${menorValor}`);
+
+// 8. Utilizando o for, crie um array que vá de 1 até 25 e imprima o resultado; 
+let array = [];
+for (i5 = 1; i5 <= 25; i5 += 1) {
+  array.push([i5]);
+}
+console.log(`${array}`);
