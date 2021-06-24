@@ -18,6 +18,31 @@ console.log(Math.ceil(mediaAritmetica));
 if (mediaAritmetica > 20) {
   console.log(`Valor maior que 20`);
 } else {
-  console.log(`Valor menor ou igual a 20`)
+  console.log(`Valor menor ou igual a 20`);
 }
 
+// 5. Uyilizando for, descubra qual o maior valor contido no array e imprima-o; 
+
+let maiorNumero = numbers[0];
+for (let i2 = 1; i2 < numbers.length; i2 += 1) {
+  if (numbers[i2] > maiorNumero) {
+    maiorNumero = numbers[i2];
+  }
+}
+console.log(`O maior número é: ${maiorNumero}`);
+
+// 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+
+let impar = 0;
+let grupo = [];
+for (let i3 = 0; i3 < numbers.length; i3 += 1) {
+  if(numbers[i3] % 2 !== 0 ){
+    impar += 1;
+    grupo.push(numbers[i3]);
+  } 
+}
+if(impar === 0){
+  console.log('nenhum valor ímpar encontrado');
+}else{
+  console.log(`Quantidade de ímpares é: ${impar}. Estes são ${grupo}`);
+}
