@@ -53,11 +53,18 @@ for (let i4 = 0; i4 < numbers.length; i4 += 1) {
     menorValor = numbers[i4];
   }
 }
-console.log(`Menor valor é ${menorValor}`);
+console.log(`Exercicio 7: Menor valor é ${menorValor}`);
 
 // 8. Utilizando o for, crie um array que vá de 1 até 25 e imprima o resultado; 
 let array = [];
 for (i5 = 1; i5 <= 25; i5 += 1) {
   array.push([i5]);
 }
-console.log(`${array}`);
+console.log(`Exercicio 8:${array}`);
+
+// 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2
+let resultadoDaDivisaoDeCadaElemento = [];
+for (let i6 = 0; i6 < array.length; i6 += 1) {
+  resultadoDaDivisaoDeCadaElemento.push(array[i6]/2);
+}
+console.log(`Exercicio 9: ${resultadoDaDivisaoDeCadaElemento}`);
