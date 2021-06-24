@@ -21,6 +21,6 @@ for (let sum of arrOfNumbers){
 // 31
 
 let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for (imprir of names){
+for (let imprir of names){
   console.log(imprir);
 }
