@@ -8,7 +8,8 @@ function catatue(n1) {
     if (maior === catatue[key]) {
       contador += 1;
       numeroRepetido = catatue[key];
-    } if ( catatue[key] )
+    }
+    if (catatue[key])
   }
   return;
 }
