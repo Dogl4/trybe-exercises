@@ -11,11 +11,14 @@
 <body>
   <header>
     <h2 id="page-title">Título</h2>
-    <p id="paragraph">Dê uma cor para este parágrado!</p>
+    <p class="paragraph">Dê uma cor para este parágrado!</p>
     <h4 id="subtitle">Subtítulo</h4>
-    <p id="second-paragraph">Segundo parágrafo!</p>
+    <p class="paragraph">Segundo parágrafo!</p>
   </header>
   <script>
+    document.getElementsByClassName('paragraph')[0].style.background = 'blue';
+    document.getElementsByTagName('h4')[0].style.fontSize = '28px';
+    document.getElementsByTagName('h4')[0].style.color = 'green';
   </script>
 </body>
 
