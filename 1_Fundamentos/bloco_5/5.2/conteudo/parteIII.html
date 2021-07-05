@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Acessando nó</title>
+</head>
+
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    // 1
+    function one() {
+      let pai = document.querySelector('#paiDoPai').firstElementChild;
+      let primeiro = document.querySelector('#primeiroFilho');
+      let terceiro = document.querySelector('#terceiroFilho');
+      let quarto = document.querySelector('#quartoEUltimoFilho');
+      pai.removeChild(primeiro);
+      pai.removeChild(terceiro);
+      pai.removeChild(quarto);
+      let elementoOndeVoceEsta = document.querySelector('#pai').lastElementChild;
+      let segundo = document.querySelector('#segundoEUltimoFilhoDoFilho');
+      elementoOndeVoceEsta.removeChild(segundo);
+    }
+    one();
+
+  </script>
+</body>
+
+</html>
