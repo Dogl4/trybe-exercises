@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Acessando nó</title>
+</head>
+
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    function one() {
+      let elementoOndeVoceEsta = document.querySelectorAll('#elementoOndeVoceEsta')[0];
+      elementoOndeVoceEsta.parentElement.style.color = "green";
+    }
+    one();
+
+    function tree() {
+      let primeiroFilhoDoFilho = document.querySelectorAll('#segundoEUltimoFilhoDoFilho')[0];
+      primeiroFilhoDoFilho.innerText = 'Hello Word';
+    }
+    tree();
+
+    function four() {
+      let pai = document.querySelectorAll('#pai')[0];
+      pai.firstElementChild;
+    }
+    four();
+
+    function cinco() {
+      let cinco = document.querySelectorAll('#elementoOndeVoceEsta')[0].previousElementSibling;
+    }
+    cinco();
+
+    function seis() {
+      let seis = document.querySelectorAll('#elementoOndeVoceEsta')[0].nextSibling;
+    }
+    seis();
+
+    function sete() {
+      let sete = document.querySelectorAll('#elementoOndeVoceEsta')[0].nextElementSibling;
+    }
+    sete();
+
+    function oito() {
+      let oito = document.querySelectorAll('#pai')[0].lastElementChild.previousElementSibling;
+    }
+    oito();
+  </script>
+</body>
+
+</html>
