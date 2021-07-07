@@ -47,14 +47,14 @@ adicionaClassAosDiasDaLista(dezDaysList, feriadosDez, 'holiday');
 adicionaClassAosDiasDaLista(dezDaysList, sextaDez, 'friday');
 
 // 2 Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
-function feriado() {
+function createButton(nomeBotaoEntreAspas, nomeIdEntreAspas) {
   const botao = document.createElement('button');
-  botao.id = 'btn-holiday';
-  botao.innerHTML = 'Feriados';
+  botao.id = nomeIdEntreAspas;
+  botao.innerHTML = nomeBotaoEntreAspas;
   const divPai = document.querySelector('.buttons-container');
   divPai.appendChild(botao);
 }
-feriado();
+createButton('Feriados', 'btn-holiday');
 
 // 3 Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
 
@@ -64,9 +64,26 @@ botaoFeriados.addEventListener('click', () => {
   const acao = document.querySelectorAll('.holiday');
   for (let key in acao) {
     if (acao[key].style.backgroundColor !== 'lightgreen') {
-      acao[key].style.backgroundColor = 'lightgreen';
+      acao[key].style.backgroundColor = 'lightgreen'
     } else {
-      acao[key].style.backgroundColor = 'rgb(238,238,238)'
+      acao[key].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  }
+});
+
+// 4 Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+createButton('Sexta-Feira', 'btn-friday');
+
+// 5 Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira. 
+const botaoSexta = document.querySelector('#btn-friday');
+
+botaoSexta.addEventListener('click', () => {
+  const acao = document.querySelectorAll('.friday');
+  for (let key in acao) {
+    if (acao[key].style.backgroundColor !== 'red') {
+      acao[key].style.backgroundColor = 'red'
+    } else {
+      acao[key].style.backgroundColor = 'rgb(238,238,238)';
     }
   }
 });
