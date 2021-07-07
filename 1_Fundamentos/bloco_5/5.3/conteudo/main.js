@@ -3,6 +3,7 @@ const secondDiv = document.getElementById('second-div');
 const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
+const corH3 = document.querySelector('h3').style.color;
 
 
 
@@ -44,7 +45,7 @@ myWebpage.addEventListener('mouseover', (event) => {
   event.target.style.color = 'green';
 })
 myWebpage.addEventListener('mouseout', (event) => {
-  event.target.style.color = 'unset';
+  event.target.style.color = corH3;
 })
 
 function resetText(event) {
