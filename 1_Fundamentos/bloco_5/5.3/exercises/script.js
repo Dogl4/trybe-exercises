@@ -18,9 +18,9 @@ createDaysOfTheWeek();
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 //1 Função que Adiciona os dias da semana
+const ulWeeks = document.querySelector('#days');
 
 function createDaysWeekDays() {
-  const ulWeeks = document.querySelector('#days');
   for (let i in dezDaysList) {
     const dias = document.createElement('li');
     dias.classList.add('day');
@@ -87,3 +87,19 @@ botaoSexta.addEventListener('click', () => {
     }
   }
 });
+
+// 6 Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+
+ulWeeks.addEventListener('mouseover', (event) => {
+  const element = event.target;
+  element.style.fontSize = '30px';
+  element.style.fontWeight = '600';
+  console.log(element);
+ });
+
+ ulWeeks.addEventListener('mouseout', (event) => {
+  event.target.style.fontSize = '20px';
+  event.target.style.fontWeight = '200';
+ });
+
+//  7
