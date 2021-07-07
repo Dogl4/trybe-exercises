@@ -1,6 +1,6 @@
 // localStorage
 const button = document.getElementById('add-button');
-const input = document.getElementById('phrase-input');
+const input = document.getElementById('phrases-input');
 const list = document.getElementById('phrases-list');
 
 function addPhraseToLocalStorage() {
