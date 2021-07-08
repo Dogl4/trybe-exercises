@@ -1,4 +1,4 @@
-const elementoParagrafo = document.querySelector('p'); //Dom paragrafo
+const elementoParagrafo = document.querySelector('#section'); //Dom paragrafo
 const fundo = document.body.style; //DOM cor Fundo
 
 window.onload = function () {
@@ -29,7 +29,7 @@ window.onload = function () {
     localStorage.setItem('fontSize',`${tamanhoParagrafoUsu.value}px`);
   })
 
-  lineHeightUsu.addEventListener('change', () => { // distancia entre linhas do Paragrafo
+  lineHeightUsu.addEventListener('input', () => { // distancia entre linhas do Paragrafo
     elementoParagrafo.style.lineHeight = `${lineHeightUsu.value}px`;
     localStorage.setItem('lineHeightUsu',`${lineHeightUsu.value}px`);
   })
