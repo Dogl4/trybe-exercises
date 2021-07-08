@@ -34,7 +34,7 @@ window.onload = function () {
     localStorage.setItem('lineHeightUsu',`${lineHeightUsu.value}px`);
   })
 
-  fontFamilyUsu.addEventListener('change', () => { // distancia entre linhas do Paragrafo
+  fontFamilyUsu.addEventListener('change', () => { // fonte do Paragrafo
     elementoParagrafo.style.fontFamily = `${fontFamilyUsu.value}px`;
     localStorage.setItem('fontFamilyUsu',`${fontFamilyUsu.value}px`);
   })
