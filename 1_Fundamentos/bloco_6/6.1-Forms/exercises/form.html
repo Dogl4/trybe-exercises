@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário currículo</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>Faça seu currículo</h1>
+    </header>
+    <article>
+      <fieldset>
+        <label for="name-usu">Nome Completo: <input type="text" id="name-usu" name="nome-completo" maxlength="40"
+            required></label><br>
+        <label for="email-usu">E-mail: <input type="email" id="email-usu" name="email" maxlength="50"
+            required></label><br>
+        <label for="cpf">CPF: <input type="number" id="cpf" name="cpf-usuario" maxlength="11" required></label><br>
+        <label for="cidade">Cidade: <input type="text" id="cidade" name="cidade-usuario" maxlength="28"
+            required></label><br>
+        <label for="estados">Estado
+          <select name="usu-estado" id="estados" required>
+          </select></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="resumo">Resumo sobre mim: <br></label><textarea name="resumo-sobre-mim" id="resumo" cols="30" rows="5"
+            maxlength="1000" required></textarea><br>
+        <label for="cargo">Cargo: <input type="text" name="usu-cargo" id="cargo" maxlength="40" required></label><br>
+        <label for="cargo-descricao">Descrição do cargo: <input type="text" name="usu-cargo-descricao"
+            id="cargo-descricao" maxlength="500" valeu required></label><br>
+        <label for="data">Data de início: <input type="date" id="data" name="data-de-inicio" value="data-de-inicio"
+            required></label><br>
+      </fieldset>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
