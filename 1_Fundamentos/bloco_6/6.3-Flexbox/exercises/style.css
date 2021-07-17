@@ -30,3 +30,21 @@ section p {
   display: flex;
   justify-content: center;
 }
+
+.corpo {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.corpo div {
+  margin: 15px;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 5px;
+}
