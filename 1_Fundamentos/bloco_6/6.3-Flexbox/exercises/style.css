@@ -25,3 +25,8 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
+section p {
+  display: flex;
+  justify-content: center;
+}
