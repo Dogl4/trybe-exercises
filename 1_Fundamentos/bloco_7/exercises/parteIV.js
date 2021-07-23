@@ -1,4 +1,5 @@
 // 4 - Coloque suas habilidade como entrada, que elas seram colocadas no X do string
+const skills = ['CSS', 'HTML', 'Calmo', 'JavaScript', 'Bootstrap'];
 
 let string = "Trybe x aqui!";
 
@@ -11,4 +12,9 @@ const skillsX = (e) => {
   return troca;
 }
 
-console.log(skillsX('CSS HTML Calmo JavaScript Bootstrap'));
+console.log(skillsX(skills));
+
+// 4.2 Ordena alfabeticamente
+
+console.log(skillsX(skills.sort()));
+// pega a função anterior(array de skills + função sort());
