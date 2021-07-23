@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Clicks</title>
+</head>
+
+<body>
+
+  <p id="contador">0</p>
+  <button id="botao">Click me</button>
+
+<script>
+  // 3- Contado de clicks
+  const botao = document.querySelector('#botao');
+  let clickCount = 0;
+  botao.addEventListener('click', () => {
+    clickCount += 1;
+    document.querySelector('#contador').innerHTML = clickCount;
+  });
+</script>
+</body>
+
+</html>
