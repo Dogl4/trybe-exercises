@@ -59,15 +59,28 @@
 // console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
 
 
-const person = {
-  name:'Roberto',
+// const person = {
+//   name:'Roberto',
+// };
+
+// const lastName = {
+//   lastName: 'Silva',
+// };
+
+// const newPerson = Object.assign({},person,lastName);
+// newPerson.name = 'Gilberto';
+// console.log(newPerson);
+// console.log(person);
+
+const band = {
+  name: 'Blind Guardian',
+  formedIn: 1986,
+  lastAlbum: 'Beyond the Red Mirror',
 };
 
-const lastName = {
-  lastName: 'Silva',
+const info = {
+  genre: 'Power Metal',
+  lastAlbum: 'Twilight Orchestra: Legacy of the Dark Lands',
 };
 
-const newPerson = Object.assign({},person,lastName);
-newPerson.name = 'Gilberto';
-console.log(newPerson);
-console.log(person);
+console.log(Object.assign(band, info));
