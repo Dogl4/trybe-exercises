@@ -24,7 +24,7 @@ const addFuncao = (lesson2) => {
   lesson2.turno = 'manhã';
 }
 addFuncao(lesson2)
-console.log(lesson2);
+// console.log(lesson2);
 
 // 2 Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
@@ -48,7 +48,11 @@ const listaValeus = (obj) => {
 
 const allLessons = {};
 
-Object.assign(allLessons, {lesson1, lesson2, lesson3});
+Object.assign(allLessons, {
+  lesson1,
+  lesson2,
+  lesson3
+});
 
 // console.log(allLessons);
 
@@ -58,6 +62,26 @@ const totalStunding = (obj) => {
   return obj.lesson1.numeroEstudantes + obj.lesson2.numeroEstudantes + obj.lesson3.numeroEstudantes;
 };
 
-console.log(totalStunding(allLessons));
+// console.log(totalStunding(allLessons));
 
 // 7 Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+
+const positionChave = (obj, chave) => {
+  return Object.values(obj)[chave]; // Pega o TODOS os valores, e acessa em especifico o da CHAVE;
+}
+
+console.log(positionChave(lesson2, 0));
+
+// 8 Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
+
+const retonaSeExistir = (obj, chave, valeu) => {
+  const mapObj = Object.entries(obj);
+  for (index in mapObj) {
+    if (mapObj[0][index] && mapObj[1][index]) { // percore o array, do map, map[1][indice] = [[c,v],[c,v]]
+      return true; // map[chaves][procura]; map[valeus][procura];
+    }
+  }
+  return false;
+}
+
+console.log(retonaSeExistir(lesson2, 'turno', 'manhã'));
