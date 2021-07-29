@@ -21,10 +21,18 @@
 
 
 // 1 Use o método forEach chamando a callback showEmailList para apresentar os emails
-const emailListInData = ['roberta@email.com', 'paulo@email.com', 'anaroberto@email.com', 'fabiano@email.com'];
+// const emailListInData = ['roberta@email.com', 'paulo@email.com', 'anaroberto@email.com', 'fabiano@email.com'];
 
-const showEmailList = (email) => {
-  console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
-}
+// const showEmailList = (email) => {
+//   console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
+// }
 
-emailListInData.forEach(showEmailList);
+// emailListInData.forEach(showEmailList);
+
+
+// 2 Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
+const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+const findNameWithFiveLetters = names.find((e) => e.length === 5);
+
+console.log(findNameWithFiveLetters);
