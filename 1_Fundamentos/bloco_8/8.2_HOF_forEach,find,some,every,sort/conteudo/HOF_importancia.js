@@ -45,34 +45,53 @@
 
 // console.log(students);
 
-const students = [{
-    name: 'Maria',
-    grade: 70,
-    aproved: ''
-  },
-  {
-    name: 'José',
-    grade: 56,
-    approved: ''
-  },
-  {
-    name: 'Roberto',
-    grade: 90,
-    approved: ''
-  },
-  {
-    name: 'Ana',
-    grade: 81,
-    approved: ''
-  }
-];
+// const students = [{
+//     name: 'Maria',
+//     grade: 70,
+//     aproved: ''
+//   },
+//   {
+//     name: 'José',
+//     grade: 56,
+//     approved: ''
+//   },
+//   {
+//     name: 'Roberto',
+//     grade: 90,
+//     approved: ''
+//   },
+//   {
+//     name: 'Ana',
+//     grade: 81,
+//     approved: ''
+//   }
+// ];
 
-const verifyGrades = () => {
-  students.forEach((student, index) => {
-    students[index].grade >= 60 ? students[index].approved = 'Aprovado' : students[index].approved = 'Recuperação';
-  })
-}
+// const verifyGrades = () => {
+//   students.forEach((student, index) => {
+//     students[index].grade >= 60 ? students[index].approved = 'Aprovado' : students[index].approved = 'Recuperação';
+//   })
+// }
 
-verifyGrades();
+// verifyGrades();
 
-console.log(students);
+// console.log(students);
+
+// Diminui o código.
+
+
+// const numbers = [11, 24, 39, 47, 50, 62, 75, 81, 96, 100];
+// let firstMultiple0f5;
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if(numbers[index] % 5 === 0) {
+//     firstMultiple0f5 = numbers[index];
+//     break;
+//   }
+// }
+
+// console.log(firstMultiple0f5);
+
+const numbers = [11, 24, 39, 47, 50, 62, 75, 81, 96, 100];
+let firstMultiple0f5 = numbers.find((number) => number % 5 === 0); // Magnifico, ele roda todo o array e encontra o primeiro
+
+console.log(firstMultiple0f5);
