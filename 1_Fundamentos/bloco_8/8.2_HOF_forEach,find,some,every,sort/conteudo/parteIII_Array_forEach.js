@@ -8,12 +8,23 @@
 
 
 // HOF forEach, para transformar em toUpperCase()
-const names = ['Bianca', 'Camila', 'Fernando', 'Ana Roberta'];
+// const names = ['Bianca', 'Camila', 'Fernando', 'Ana Roberta'];
 
-const convertToUpperCase = (name, index) => {
-  names[index] = name.toUpperCase(); // sobreEscreve
+// const convertToUpperCase = (name, index) => {
+//   names[index] = name.toUpperCase(); // sobreEscreve
+// }
+
+// names.forEach(convertToUpperCase); // percorre todo array
+
+// console.log(names);
+
+
+
+// 1 Use o método forEach chamando a callback showEmailList para apresentar os emails
+const emailListInData = ['roberta@email.com', 'paulo@email.com', 'anaroberto@email.com', 'fabiano@email.com'];
+
+const showEmailList = (email) => {
+  console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
 }
 
-names.forEach(convertToUpperCase); // percorre todo array
-
-console.log(names);
+emailListInData.forEach(showEmailList);
