@@ -30,9 +30,30 @@
 // emailListInData.forEach(showEmailList);
 
 
-// 2 Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+// // 2 Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
+// const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
-const findNameWithFiveLetters = names.find((e) => e.length === 5);
+// const findNameWithFiveLetters = names.find((e) => e.length === 5); // Verifica nome dentro do fin e retorna o primero nome com tamanho 5
 
-console.log(findNameWithFiveLetters);
+// console.log(findNameWithFiveLetters);
+
+
+// 3 Utilize o find para encontrar a música com id igual a 31031685 , caso ela exista:
+const musicas = [{
+    id: '31031685',
+    title: 'Partita in C moll BWV 997'
+  },
+  {
+    id: '31031686',
+    title: 'Toccata and Fugue, BWV 565'
+  },
+  {
+    id: '31031687',
+    title: 'Chaconne, Partita No. 2 BWV 1004'
+  },
+]
+
+const findMusic = (valorId) => musicas.find((elemento) => elemento.id === valorId); // 3 funções em uma linha.
+// 1° comparação, 2° find(), percorre o array e retorna o 1°elemento, 3° função o valor para comparar.
+
+console.log(findMusic('31031685'));
