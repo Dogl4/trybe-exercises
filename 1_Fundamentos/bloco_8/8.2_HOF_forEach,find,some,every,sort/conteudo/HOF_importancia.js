@@ -45,3 +45,34 @@
 
 // console.log(students);
 
+const students = [{
+    name: 'Maria',
+    grade: 70,
+    aproved: ''
+  },
+  {
+    name: 'José',
+    grade: 56,
+    approved: ''
+  },
+  {
+    name: 'Roberto',
+    grade: 90,
+    approved: ''
+  },
+  {
+    name: 'Ana',
+    grade: 81,
+    approved: ''
+  }
+];
+
+const verifyGrades = () => {
+  students.forEach((student, index) => {
+    students[index].grade >= 60 ? students[index].approved = 'Aprovado' : students[index].approved = 'Recuperação';
+  })
+}
+
+verifyGrades();
+
+console.log(students);
