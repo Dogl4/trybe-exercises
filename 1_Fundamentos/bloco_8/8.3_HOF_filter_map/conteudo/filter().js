@@ -34,3 +34,4 @@ listStudents.filter(student => student !== name);
 
 const newListStudents = removeStudentByName('Ricardo', arrayMyStudents);
 console.log(newListStudents);
+
