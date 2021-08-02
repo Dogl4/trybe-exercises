@@ -56,6 +56,8 @@
 // const sumNumbers = numbers.reduce(getSum, 0);
 // console.log(sumNumbers);
 
-const numbers = [18, 19, 23, 53, 4, 76, 23, 54];
-const sumNumbers = numbers.reduce((result, number) => result + number, 0);
-console.log(sumNumbers);
+// const numbers = [18, 19, 23, 53, 4, 76, 23, 54];
+// const sumNumbers = numbers.reduce((result, number) => result + number, 0); // resumido, 1° parâmetro a função, segundo o acumulador
+// console.log(sumNumbers);
+
+
