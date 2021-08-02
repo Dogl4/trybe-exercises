@@ -37,8 +37,25 @@
 // console.log(sumNumbers); // 123
 // 
 
-const numbers = [50, 85, -30, 3, 15];
-const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
+// const numbers = [50, 85, -30, 3, 15];
+// const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
+// 
+// const bigger = numbers.reduce(getBigger, 0);
+// console.log(bigger); // 85 
 
-const bigger = numbers.reduce(getBigger, 0);
-console.log(bigger); // 85
+// const numbers = [50, 85, -30, 3, 15];
+// const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
+// 
+// const bigger = numbers.reduce(getBigger, 100);
+// console.log(bigger); // 100
+
+
+
+// const numbers = [18, 19, 23, 53, 4, 76, 23, 54];
+// const getSum = (result, number) => result + number;
+// const sumNumbers = numbers.reduce(getSum, 0);
+// console.log(sumNumbers);
+
+const numbers = [18, 19, 23, 53, 4, 76, 23, 54];
+const sumNumbers = numbers.reduce((result, number) => result + number, 0);
+console.log(sumNumbers);
