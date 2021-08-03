@@ -9,10 +9,10 @@
 
 // // // SE NÂO TIVER, cria
 // const { nationality = 'Brazilian' } = person;
-// console.log(person); // Brazilian
+// console.log(nationality); // Brazilian
 
 
-// // Para fixar
+// // // Para fixar
 const getNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
 
 const person = {
@@ -26,8 +26,8 @@ const otherPerson = {
   nationality: 'Russian',
 };
 
-// const { nationality = 'Brasilian' } = person; // Cria ????? Bugado!!!!!!!!!
-Object.assign(person, {nationality: 'Brasilian'}); // Conserta!
+const { firstName, lastName, nationality = 'Brasilian' } = person; // Cria ????? Bugado!!!!!!!!!
+// Object.assign(person, {nationality: 'Brasilian'}); // Conserta!
 
 console.log(getNationality(otherPerson)); // Ivan is Russian
-console.log(getNationality(person));
+console.log(getNationality({firstName, nationality}));
