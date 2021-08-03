@@ -9,7 +9,7 @@ const arrays = [
 // 
 // function flatten() {return arrays.reduce((acc, elem) => acc + elem, [])};
 // console.log(flatten());
-
+// Estude mais sobre concat e push.
 function flatten() {return arrays.reduce((acc, elem) => acc.concat(elem), [])};
 console.log(flatten());
 
