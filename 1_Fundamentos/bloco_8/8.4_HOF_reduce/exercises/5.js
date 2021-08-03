@@ -10,8 +10,7 @@ const names = [
 function containsA() {
   // array.reduce.( 0 + resultado.reduce(0 + vezes que 'a' se repetem))
   return names.reduce((acc, curr) => acc + curr.toLowerCase().split('').reduce(
-    (acc2, curr2) => (curr2 === 'a' ? acc2 + 1 : acc2), 0), 0)
-}
+    (acc2, curr2) => (curr2 === 'a' ? acc2 + 1 : acc2), 0),0)}
 console.log(containsA());
 
-// assert.deepStrictEqual(containsA(), 20);
+assert.deepStrictEqual(containsA(), 20);
