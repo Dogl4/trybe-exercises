@@ -39,3 +39,4 @@ const promise = new Promise((resolve, reject) => {
 .then(number => `Que suceso =) nosso número foi ${number}`)
 .then(msg => console.log(msg))
 .catch(number => console.log(`Que fracasso =( Nosso número foi ${number}`))
+
