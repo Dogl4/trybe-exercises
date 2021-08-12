@@ -1,0 +1,19 @@
+/* Exemplo de um JSO */
+{
+  "trybers": [
+    {
+      "name": "Lauro Cesar"
+      "github": "lauroandrade",
+      "status": "#vqv"
+    }
+  ]
+}
+
+
+/* Exemplo de um request do tipo GET para uma API, que retorna um JSON como response */
+// wget 'https://pokeapi.co/api/v2/pokemon/ditto' -o - -q
+
+
+// Construtor
+// const promise = new Promise((resolve, reject) => {});
+
