@@ -8,12 +8,12 @@ const loginErrorMessage = (user) => {
 };
 
 const user = {
-  userName: 'Joana',
+  userName: "Joana",
   password: 123456,
 };
 
 const verifyCredentials = ({ userName, password }) => {
-  if (password === 123456 && userName === 'Joana') {
+  if (password === 123456 && userName === "Joana") {
     return greetingMessage(userName);
   } else {
     return loginErrorMessage(userName);
@@ -22,4 +22,4 @@ const verifyCredentials = ({ userName, password }) => {
 
 const { userName, password } = user;
 
-module.exports = { greetingMessage, loginErrorMessage, verifyCredentials };
+module.exports = { greetingMessage, loginErrorMessage, verifyCredentials }
