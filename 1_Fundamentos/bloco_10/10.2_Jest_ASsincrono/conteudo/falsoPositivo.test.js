@@ -33,7 +33,7 @@ test('Não deveria passar!', (done) => {
       console.log('Deveria falhar!');
       done();
     } catch (error) {
-      done(error); // Alteramos esta linha
+      done(error); // Alteramos esta linha // CERTo, tratar o erro.
     }
   }, 500);
 });
