@@ -8,6 +8,7 @@ function App() {
         Email
       </label>
       <input id="id-email" type="email" />
+      <input id="id-email" type="button" value="Enviar" />
     </div>
   );
 }
